@@ -44,3 +44,19 @@ int[][] graph = {
        {0, 1, 1, 0},
 };
 ```
+
+### Topological Sort:
+The topological sort algorithm takes a directed graph and returns an array of 
+the nodes where each node appears before all the nodes it points to.
+
+> The ordering of the nodes in the array is called a topological ordering.
+ 
+Rule 1: A graph can have more than one topological ordering.
+Rule 2: cyclic graphs don't have valid topological orderings.
+
+Algorithm to develop:
+> This is a common algorithm design pattern:
+> 1. Figure out how to get the first thing.
+> 2. Remove the first thing from the problem.
+> 3. Repeat.
+
