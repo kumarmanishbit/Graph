@@ -4,8 +4,9 @@ import java.util.*;
 
 /**
  * kahn's algorithm
+ * Time Complexity: O(V + E)
  */
-public class TopologicalSort {
+public class TopologicalSortKahnsAlgorithm {
     public static void main(String[] args) {
 
 //        Map<Integer, List<Integer>> graph = new HashMap<>() {{
