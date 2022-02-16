@@ -3,6 +3,7 @@ package com.mani.soni.topologicalsort;
 import java.util.*;
 
 /**
+ * Topological Sort: Arranges the nodes in a directed, acyclic graph in a special order based on incoming edges.
  * kahn's algorithm
  * Time Complexity: O(V + E)
  */
