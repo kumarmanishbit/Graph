@@ -60,3 +60,8 @@ Algorithm to develop:
 > 2. Remove the first thing from the problem.
 > 3. Repeat.
 
+Back Edge:- Given a DFS tree of a graph, a Back Edge is an edge that connects a 
+vertex to a vertex that is discovered before its parent. Presence of a back edge 
+means presence of an alternative path in case the parent of the vertex is removed.
+For more details:- https://www.hackerearth.com/practice/algorithms/graphs/articulation-points-and-bridges/tutorial/
+

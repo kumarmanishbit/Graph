@@ -56,6 +56,10 @@ public class ArticulationPoint {
                 children++;
                 parent[neighbour] = source;
                 articulationPointUtils(graph, neighbour, visited, discoverTime, lowestDiscoverTime, parent, articulationPoint);
+
+                // When that DFS call will return,  will have the discovery time of the earliest discovered vertex that
+                // can be reached from any vertex in the subtree rooted at v.
+                // lowestDiscover[] will have the earliest discovery time
                 lowestDiscoverTime[source] = Math.min(lowestDiscoverTime[source], lowestDiscoverTime[neighbour]);
 
                 // We got an articulation point.
@@ -63,11 +67,16 @@ public class ArticulationPoint {
                     articulationPoint[source] = true;
                 }
 
+                // if  is not the root, it checks whether  is greater than or equal to ,
+                // and if so, it marks  articulationPoint[source] as true.
                 if(parent[source] != -1 && lowestDiscoverTime[neighbour] >= discoverTime[source]) {
                     articulationPoint[source] = true;
                 }
 
             } else if(parent[source] != neighbour){
+                // algorithm iterates over every vertex in the graph and see if it is connected to ,
+                // if it finds a vertex . that is connected to , but has already been visited,
+                // then it updates the value  to minimum of  and discovery time of  v i.e., disc[v]
                 lowestDiscoverTime[source] = Math.min(lowestDiscoverTime[neighbour], discoverTime[source]);
             }
         }
