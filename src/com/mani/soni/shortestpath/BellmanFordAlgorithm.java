@@ -2,6 +2,10 @@ package com.mani.soni.shortestpath;
 
 import java.util.Arrays;
 
+/**
+ *  This algorithm works event for negative edge cycle.
+ *  This is a dynamic programming approach.
+ */
 public class BellmanFordAlgorithm {
 
     public static void main(String[] args) {
