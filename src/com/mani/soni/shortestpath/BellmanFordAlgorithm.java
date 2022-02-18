@@ -54,16 +54,16 @@ public class BellmanFordAlgorithm {
             System.out.println(d);
         }
     }
-}
+    static class Edge {
+        int src;
+        int dest;
+        int weight;
 
-class Edge {
-    int src;
-    int dest;
-    int weight;
-
-    Edge(int src, int dest, int weight) {
-        this.src = src;
-        this.dest = dest;
-        this.weight = weight;
+        Edge(int src, int dest, int weight) {
+            this.src = src;
+            this.dest = dest;
+            this.weight = weight;
+        }
     }
 }
+

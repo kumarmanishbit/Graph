@@ -12,6 +12,10 @@ import java.util.*;
  * Note:- MST size should be V - 1.
  *
  * Represent graph in terms of edges.
+ *
+ * Implemented using Disjoint Set, Disjoint sets are sets whose intersection is the empty
+ * set so it means that they don't have any element in common.
+ *
  */
 public class KruskalAlgorithm {
 
