@@ -16,6 +16,7 @@ import java.util.*;
 public class KruskalAlgorithm {
 
     public static void main(String[] args) {
+        // We need Edge representation of the graph
         Edge[] graph = {new Edge(0, 1, 10),
                 new Edge(0, 2, 8),
                 new Edge(1, 2, 5),

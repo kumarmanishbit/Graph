@@ -34,6 +34,7 @@ public class DFSTraversal {
 
     private static void dfs(Map<Integer, List<Integer>> graph, int i) {
         Set<Integer> set = new HashSet<>();
+        // loop will help to traverse even disconnected graph
         for (Map.Entry<Integer, List<Integer>> map: graph.entrySet()) {
             if(!set.contains(map.getKey())) {
                 dfsUtils(graph, map.getKey(), set);
